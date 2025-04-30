@@ -3,6 +3,9 @@
 ezShop is a lightweight e-commerce platform built with Node.js and Vue.js, perfect for beginners learning full-stack development. This project includes all essential e-commerce features, including user registration and authentication, product browsing, shopping cart functionality, order processing, and administrator capabilities.
 
 ## Technology Stack
+![ezshop_02](https://github.com/user-attachments/assets/3731ae59-76e4-4d0c-b629-29fbec3e7271)
+![ezshop_03](https://github.com/user-attachments/assets/82fdad2a-ee43-4af1-9add-9c3b9f5c72a5)
+
 
 ### Backend
 - Node.js
