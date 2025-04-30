@@ -1,0 +1,26 @@
+const express = require('express');
+const router = express.Router();
+const { protect, admin } = require('../middleware/authMiddleware');
+
+// 控制器函數 (後面會實作)
+const {
+  getProducts,
+  getProductById,
+  deleteProduct,
+  createProduct,
+  updateProduct,
+  createProductReview,
+  getTopProducts,
+} = require('../controllers/productController');
+
+// 路由
+router.route('/').get(getProducts).post(protect, admin, createProduct);
+router.route('/top').get(getTopProducts);
+router
+  .route('/:id')
+  .get(getProductById)
+  .delete(protect, admin, deleteProduct)
+  .put(protect, admin, updateProduct);
+router.route('/:id/reviews').post(protect, createProductReview);
+
+module.exports = router;

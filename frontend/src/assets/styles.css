@@ -1,0 +1,69 @@
+/* 主要樣式 */
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+/* 產品卡片樣式 */
+.product-card {
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-title {
+  height: 2.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 購物車 */
+.cart-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+/* 表單 */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 步驟條 */
+.checkout-steps {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.checkout-steps li {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.checkout-steps li.active {
+  font-weight: bold;
+  border-bottom: 2px solid #28a745;
+}
+
+/* 頁尾 */
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #f8f9fa;
+}
